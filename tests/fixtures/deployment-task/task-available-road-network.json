@@ -1,0 +1,16 @@
+{
+  "protocol_version": 1,
+  "message_id": "123e4567-e89b-12d3-a456-426614174000",
+  "type": "task.available",
+  "sequence": "2",
+  "timestamp": "2026-09-26T12:00:00Z",
+  "payload": {
+    "task_id": "123e4567-e89b-12d3-a456-426614174010",
+    "batch_id": "123e4567-e89b-12d3-a456-426614174011",
+    "project_id": "123e4567-e89b-12d3-a456-426614174012",
+    "resource_type": "road_network",
+    "resource_revision_id": "123e4567-e89b-12d3-a456-426614174013",
+    "attempt": 1,
+    "max_attempts": 3
+  }
+}

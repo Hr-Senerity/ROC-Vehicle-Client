@@ -1,0 +1,17 @@
+{
+  "protocol_version": 1,
+  "message_id": "123e4567-e89b-12d3-a456-426614174000",
+  "type": "hello",
+  "sequence": "1",
+  "timestamp": "2026-09-26T12:00:00.000Z",
+  "payload": {
+    "vehicle_id": "123e4567-e89b-12d3-a456-426614174001",
+    "heartbeat_interval_seconds": 30,
+    "idle_timeout_seconds": 45,
+    "max_message_bytes": 65536,
+    "max_heartbeat_bytes": 4096,
+    "max_telemetry_bytes": 16384,
+    "last_client_sequence": "0",
+    "future_optional_field": "ignored"
+  }
+}

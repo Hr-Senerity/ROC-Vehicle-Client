@@ -1,0 +1,14 @@
+@PACKAGE_INIT@
+
+# CMake's numeric version is 0.2.1; expose the exact agreed RC spelling too.
+set(ROCVehicleClient_FULL_VERSION "@ROC_VEHICLE_FULL_VERSION@")
+set(ROCVehicleClient_SYSTEM_COMMIT "@ROC_VEHICLE_SYSTEM_COMMIT@")
+
+include(CMakeFindDependencyMacro)
+find_dependency(OpenSSL 3.5)
+find_dependency(SQLite3)
+find_dependency(Threads)
+
+include("${CMAKE_CURRENT_LIST_DIR}/ROCVehicleClientTargets.cmake")
+
+check_required_components(ROCVehicleClient)

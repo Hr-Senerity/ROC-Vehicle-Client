@@ -1,0 +1,18 @@
+{
+  "base_url": "http://127.0.0.1:<LOOPBACK_PORT>",
+  "vehicle_id": "<VEHICLE_UUID>",
+  "transport": "http-ws-demo",
+  "network_scope": "loopback",
+  "token_file": "/build/<PRIVATE_INPUT_ROOT>/device-token",
+  "state_directory": "/build/<DEDICATED_STATE_ROOT>",
+  "artifact_directory": "/build/<DEDICATED_ARTIFACT_ROOT>",
+  "queue_capacity": 32,
+  "retry_attempts": 3,
+  "retry_initial_ms": 500,
+  "retry_maximum_ms": 5000,
+  "offline_budget_ms": 60000,
+  "http_operation_timeout_ms": 15000,
+  "hello_timeout_ms": 10000,
+  "reconnect_initial_ms": 1000,
+  "reconnect_maximum_ms": 30000
+}

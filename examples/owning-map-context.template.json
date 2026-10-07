@@ -1,0 +1,15 @@
+{
+  "context_version": 1,
+  "system_commit": "a9c601d6977d89000438854a24e3199573004a2f",
+  "vehicle_id": "REPLACE_WITH_AUTHORIZED_TEST_VEHICLE_UUID",
+  "bindings": [
+    {
+      "project_id": "REPLACE_WITH_AUTHORIZED_TEST_PROJECT_UUID",
+      "resource_revision_id": "REPLACE_WITH_ROAD_RESOURCE_REVISION_UUID",
+      "artifact_sha256": "REPLACE_WITH_FROZEN_ROAD_ARTIFACT_SHA256",
+      "map_id": "REPLACE_WITH_OWNING_MAP_UUID",
+      "map_revision_id": "REPLACE_WITH_ADMIN_VERIFIED_MAP_REVISION_UUID",
+      "coordinate_mode": "REPLACE_WITH_ADMIN_VERIFIED_MODE"
+    }
+  ]
+}

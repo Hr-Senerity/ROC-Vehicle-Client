@@ -1,0 +1,28 @@
+name: roc-vehicle-client
+
+services:
+  dev:
+    build:
+      context: .
+      dockerfile: docker/dev/Dockerfile
+      args:
+        DEV_UID: "1000"
+        DEV_GID: "1000"
+    image: roc-vehicle-client-dev:ubuntu22.04-v1
+    working_dir: /workspace
+    network_mode: none
+    init: true
+    read_only: true
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true
+    volumes:
+      - .:/workspace:ro
+      - roc_vehicle_build:/build
+    tmpfs:
+      - /tmp:rw,nosuid,nodev,size=256m
+
+volumes:
+  roc_vehicle_build:
+    name: roc-vehicle-client-build
